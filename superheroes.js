@@ -518,6 +518,9 @@ superheroes.forEach((el) => {
   clone.querySelector(
     ".dob"
   ).textContent = `${el.dob.day}/${el.dob.month}/${el.dob.year}`;
+  clone.querySelector("article").style.backgroundColor = `${
+    el.hasCape ? "#e8ac2c" : "#a48137"
+  }`;
   document.querySelector("main").append(clone);
 });
 function returnSuperPowersList(element) {
