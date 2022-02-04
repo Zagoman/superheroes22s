@@ -178,7 +178,7 @@ const superheroes = [
     name: "WonderWoman",
     powers: ["superhuman strength"],
     primaryNemesis: "Paula von Gunther",
-    img: "https://pixabay.com/images/id-4458360/",
+    img: "https://cdn.pixabay.com/photo/2019/09/07/09/27/ww-4458360_1280.png",
     lifePercentage: 70,
     dob: {
       day: 22,
@@ -306,7 +306,13 @@ const superheroes = [
   {
     name: "Fatneek daddy the animal",
     powers: ["existing"],
+    primaryNemesis: "Lord Destroyer van der DOM",
     img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fofficialfatneek&psig=AOvVaw1T9DLdWsopYLOZrJAMFTZy&ust=1644054273428000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCND7pNDh5fUCFQAAAAAdAAAAABAD",
+    dob: {
+      day: 1,
+      month: 12,
+      year: 1996,
+    },
     hasCape: true,
   },
   {
@@ -481,6 +487,11 @@ const superheroes = [
       "embarassing people",
     ],
     img: "http://www.pxleyes.com/images/contests/what-you-eat/fullsize/Banana-man-4d8a6d7b1842c.jpg",
+    dob: {
+      day: 12,
+      month: 2,
+      year: 2000,
+    },
     hasCape: false,
   },
   {
