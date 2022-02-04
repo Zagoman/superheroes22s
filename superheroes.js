@@ -498,9 +498,32 @@ const superheroes = [
   },
 ];
 
-alert(
-  "1. Checking if JS file is linked up correctly. \n2. Always open the inspector/console when woorking with the JS \n3. Write your code in the end of the js-file \n4. Don't use alert boxes for UI... \n5. Delete this message or comment it out"
-);
+// alert(
+//   "1. Checking if JS file is linked up correctly. \n2. Always open the inspector/console when woorking with the JS \n3. Write your code in the end of the js-file \n4. Don't use alert boxes for UI... \n5. Delete this message or comment it out"
+// );
 console.table(superheroes);
 
 /* write your code here */
+const template = document.querySelector("template").content;
+let counter = 0;
+superheroes.forEach((el) => {
+  const clone = template.cloneNode(true);
+  counter++;
+  console.log(counter);
+  clone.querySelector("article h4").textContent = el.name;
+  clone.querySelector("img").src = el.img;
+  clone.querySelector(".lifebar").style.width = `${el.lifePercentage}%`;
+  clone.querySelector(".superpowers").innerHTML = returnSuperPowersList(el);
+  clone.querySelector(".main-nemesis__name").textContent = el.primaryNemesis;
+  clone.querySelector(
+    ".dob"
+  ).textContent = `${el.dob.day}/${el.dob.month}/${el.dob.year}`;
+  document.querySelector("main").append(clone);
+});
+function returnSuperPowersList(element) {
+  let nString = "";
+  element.powers.forEach((a) => {
+    nString += `<li>${a}</li>`;
+  });
+  return nString;
+}

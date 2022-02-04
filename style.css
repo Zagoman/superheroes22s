@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  background-color: rgb(245, 245, 245);
+}
+img {
+  max-width: 100%;
+}
+.hero {
+  background-color: white;
+  border-radius: 4px;
+}
+article img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+}
+.lifebar-holder {
+  border: 1px solid black;
+  height: 2rem;
+  width: 80%;
+  overflow: hidden;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+.lifebar {
+  background-color: rgb(211, 52, 52);
+  height: 100%;
+  width: 80%;
+  border-radius: 4px;
+}
